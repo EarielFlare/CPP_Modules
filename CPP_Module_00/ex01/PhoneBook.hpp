@@ -6,7 +6,7 @@
 /*   By: cgregory <cgregory@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 14:45:19 by cgregory          #+#    #+#             */
-/*   Updated: 2022/09/25 16:56:17 by cgregory         ###   ########.fr       */
+/*   Updated: 2022/10/08 14:05:15 by cgregory         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <iostream>
 # include <string>
 # include <iomanip>
+# include <limits>
 
 # include "Contact.hpp"
 
@@ -23,6 +24,7 @@ class PhoneBook{
 private:
 	Contact	contacts[8];
 	int		amount;
+	int		top_amount;
 public:
 	PhoneBook();
 	~PhoneBook();
