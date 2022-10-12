@@ -15,7 +15,7 @@ public:
 	Fixed(const Fixed &copy);
 	~Fixed();
 	
-	Fixed	&operator=	(const Fixed &assignment);
+	Fixed	&operator=	(const Fixed &assign);
 
 	bool	operator==	(const Fixed &object);
 	bool	operator!=	(const Fixed &object);

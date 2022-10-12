@@ -2,18 +2,18 @@
 
 Fixed::Fixed() : value(0) {}
 
-Fixed::Fixed(const int value) {	this->value = value << bit; }
+Fixed::Fixed(const int value) : value(value << bit) {}	//	{	this->value = value << bit; }
 
-Fixed::Fixed(const float value) { this->value = (int)roundf(value * (1 << bit)); }
+Fixed::Fixed(const float value) : value((int)roundf(value * (1 << bit))) {}	//	{ this->value = (int)roundf(value * (1 << bit)); }
 
 Fixed::Fixed(const Fixed &copy) : value(copy.value) {}
 
 Fixed::~Fixed() {}
 
-Fixed	&Fixed::operator=(const Fixed &assignment) {
-//	if (this == &assignment)
+Fixed	&Fixed::operator=(const Fixed &assign) {
+//	if (this == &assign)
 //		return *this;
-	value = assignment.getRawBits();
+	value = assign.getRawBits();
 	return *this;
 }
 

@@ -2,19 +2,21 @@
 #include "Fixed.hpp"
 
 int main( void ) {
-/*
-//	float	a1 = 12.34f;
-//	float	b1 = 21.57f;
-	Fixed a(12.34f);
-	Fixed b(21.57f);
+
+//	float	a1 = 12.3444444444f;
+//	float	b1 = 21.5744444444f;
+//	Fixed a(12.34f);
+//	Fixed b(21.57f);
 //	Fixed c = a * b;
 //	std::cout << c << std::endl;
-
+/*
 	std::cout << a1 << std::endl;
 	std::cout << a1++ << std::endl;
 	std::cout << a1 << std::endl;
 	std::cout << b1 << std::endl;
+//	std::cout << std::fixed << std::setprecision(10) << b1 << std::endl;
 	std::cout << ++b1 << std::endl;
+//	std::cout << std::fixed << std::setprecision(10) << ++b1 << std::endl;
 	std::cout << b1 << std::endl;
 
 	std::cout << a << std::endl;
@@ -76,6 +78,7 @@ int main( void ) {
 	std::cout	<< "min(a,b):	" << Fixed::min( a, b ) << std::endl;
 	std::cout << "-----------------------------------" << std::endl;
 */
+
 	Fixed a;
 	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 
@@ -86,5 +89,6 @@ int main( void ) {
 	std::cout << a << std::endl;
 	std::cout << b << std::endl;
 	std::cout << Fixed::max( a, b ) << std::endl;
+
 	return 0;
 }
