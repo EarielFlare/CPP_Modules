@@ -2,7 +2,7 @@
 #include "Fixed.hpp"
 
 int main( void ) {
-	Fixed a;					//	Copy assignment operator called
+	Fixed a;					//	Default constructor called
 	Fixed const b( 10 );		//	Int constructor called
 	Fixed const c( 42.42f );	//	Float constructor called
 	Fixed const d( b );			//	Copy constructor called
