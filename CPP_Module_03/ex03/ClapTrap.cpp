@@ -11,7 +11,7 @@ ClapTrap::ClapTrap(std::string name) :
 
 ClapTrap::ClapTrap(const ClapTrap & object) :
 	name(object.name), hitpoints(object.hitpoints),
-	enrgpoints(object.hitpoints), attackdmg(object.attackdmg) {
+	enrgpoints(object.enrgpoints), attackdmg(object.attackdmg) {
 	std::cout << this->name << ": Copy constructor called" << std::endl;
 }
 
@@ -62,6 +62,7 @@ void ClapTrap::beRepaired(unsigned int amount) {
 		std::cout << "ClapTrap " << name << ": can't be repaired, hasn't enough energy" << std::endl;
 		return;
 	}
+	enrgpoints--;
 	hitpoints += amount;
 	std::cout 	<< "ClapTrap " << name << " repairs " << amount 
 				<< " hit points. Now it has " << hitpoints << " hitpoints."
