@@ -16,7 +16,6 @@ $(NAME):	$(OBJS) Bureaucrat.hpp Form.hpp Intern.hpp\
 clean:
 			$(RM) $(OBJS)
 			$(RM) *_shrubbery
-
 fclean:		clean
 			$(RM) $(NAME)
 re:			fclean $(NAME)
