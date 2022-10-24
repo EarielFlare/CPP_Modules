@@ -1,4 +1,4 @@
-SRCS		= main.cpp Bureaucrat.cpp Form.cpp\
+SRCS		= main.cpp Bureaucrat.cpp Form.cpp Intern.cpp\
 			PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
@@ -8,7 +8,7 @@ NAME		= FormExecutor
 
 .PHONY:		all clean fclean re
 all:		$(NAME)
-$(NAME):	$(OBJS) Bureaucrat.hpp Form.hpp\
+$(NAME):	$(OBJS) Bureaucrat.hpp Form.hpp Intern.hpp\
 			PresidentialPardonForm.hpp RobotomyRequestForm.hpp ShrubberyCreationForm.hpp
 			$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 %.o:		%.cpp
