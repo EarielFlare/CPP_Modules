@@ -18,7 +18,7 @@ public:
 	Form(const std::string name,
 		const int &gradeSign, const int &gradeExec);
 	Form(const Form &form);
-	~Form();
+	virtual ~Form();	//	so other forms can self-destruct
 
 	Form &operator=(const Form &form);
 
