@@ -37,15 +37,17 @@ void identify(Base& p) {
 	std::cout << "Reference identifying: ";
 
 	try {
-		dynamic_cast<A &>(p);
+		(void)dynamic_cast<A &>(p);
 		std::cout << "I am A" << std::endl;
-	} catch (std::bad_cast &exc) {
+	}
+	catch (std::bad_cast &exc) {
 		try {
-			dynamic_cast<B &>(p);
+			(void)dynamic_cast<B &>(p);
 			std::cout << "I am B" << std::endl;
-		} catch (std::bad_cast &exc) {
+		}
+		catch (std::bad_cast &exc) {
 			try {
-				dynamic_cast<C &>(p);
+				(void)dynamic_cast<C &>(p);
 				std::cout << "I am C" << std::endl;
 			}
 			catch (std::bad_cast &exc) {
