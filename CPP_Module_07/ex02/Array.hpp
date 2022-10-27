@@ -7,7 +7,7 @@
 template <typename T>
 class Array{
 	private:
-		T *arr;
+		T *arr;		//	arr pointer of type T
 		unsigned int n;
 	public:
 		Array() : arr(new T[0]), n(0) {
