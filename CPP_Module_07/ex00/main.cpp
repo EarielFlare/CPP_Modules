@@ -1,7 +1,6 @@
 #include "whatever.hpp"
 
-int main( void )
-{
+int main(void){
 	std::cout << "-----------INT----------" << std::endl;
 	int a = 2;
 	int b = 3;

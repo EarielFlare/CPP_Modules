@@ -14,8 +14,7 @@ void printarr(const T &obj) {
 	std::cout << obj << std::endl;
 }
 /*
-class Awesome
-{
+class Awesome{
 	private:
 		int num;
 	public:
