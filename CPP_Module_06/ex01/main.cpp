@@ -23,9 +23,8 @@ int main() {
 	std::cout << "\n---------------VALUE---------------" << std::endl;
 	std::cout << "Value: " << data.name << " | Adress: " << &data << std::endl;
 
-	test = serialize(&data);
-
 	std::cout << "-------------SERIALIZE---------------" << std::endl;
+	test = serialize(&data);
 	std::cout << "Adress(uintptr_t test): " << test << std::endl;
 
 	std::cout << "------------DESERIALIZE--------------" << std::endl;
