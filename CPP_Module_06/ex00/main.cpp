@@ -13,7 +13,6 @@ int main(int argc, char **argv)
 	str.printInt();
 	str.printFloat();
 	str.printDouble();
-/*
-*/
+
 	return (0);
 }

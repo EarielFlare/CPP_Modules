@@ -1,7 +1,6 @@
 #include "whatever.hpp"
 
-int main( void )
-{
+int main(void){
 	std::cout << "-----------INT----------" << std::endl;
 	int a = 2;
 	int b = 3;
@@ -10,7 +9,7 @@ int main( void )
 	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
 	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
 
-	std::cout << "-----------STRING----------" << std::endl;
+	std::cout << "----------STRING---------" << std::endl;
 	std::string c = "chaine1";
 	std::string d = "chaine2";
 	::swap(c, d);

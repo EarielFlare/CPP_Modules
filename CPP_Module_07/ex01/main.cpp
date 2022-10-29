@@ -1,7 +1,6 @@
 #include "iter.hpp"
 
-int main()
-{
+int main(void){
 	int	size;
 	
 	std::cout << "------INT-------" << std::endl;
