@@ -2,7 +2,7 @@ SRCS		= main.cpp Harl.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
 RM			= rm -f
-FLAGS		= -Wall -Wextra -Werror -std=c++98
+CFLAGS		= -Wall -Wextra -Werror -std=c++98
 NAME		= harlFilter
 
 .PHONY:		all clean fclean re

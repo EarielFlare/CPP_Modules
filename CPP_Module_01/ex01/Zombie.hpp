@@ -4,8 +4,6 @@
 class Zombie {
 private:
 	std::string name;
-
-			int	m_value;
 public:
 	Zombie();
 	~Zombie();

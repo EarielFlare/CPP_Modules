@@ -2,7 +2,7 @@ SRCS		= main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
 RM			= rm -f
-FLAGS		= -Wall -Wextra -Werror -std=c++98 #-Wshadow -Wno-shadow
+СFLAGS		= -Wall -Wextra -Werror -std=c++98 #-Wshadow -Wno-shadow
 NAME		= Brain
 
 .PHONY:		all clean fclean re

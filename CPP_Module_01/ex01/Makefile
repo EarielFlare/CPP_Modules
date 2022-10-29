@@ -2,7 +2,7 @@ SRCS		= main.cpp Zombie.cpp zombieHorde.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
 RM			= rm -f
-FLAGS		= -Wall -Wextra -Werror -std=c++98
+CFLAGS		= -Wall -Wextra -Werror -std=c++98
 NAME		= Zombies
 
 .PHONY:		all clean fclean re
